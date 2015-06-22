@@ -35,7 +35,7 @@ And here's the result on iOS for the XAML above:
 
 ![iOS screenshot](mGkd879Oqv.gif)
 
-Also note the `RowSpacing=0` which resets the default spacing between the cells of Grid.
+Also note the `RowSpacing=0` which resets the default spacing between the cells of Grid. You might want to set this on your Grid when using the GridSplitter, otherwise it won't look good.
 
 If you would have to split two columns instead, you need to set `HorizontalOptions="Center"` on the GridSplitter:
 
