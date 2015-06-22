@@ -29,12 +29,13 @@ An example of a Grid with two rows and a GridSplitter control:
           	</Grid>
           </ContentPage>
 
-Note that `<controls:GridSplitter Grid.Row="1" VerticalOptions="Center" />` tells the GridSplitter control it should resize the adjancent rows.
-
+Note that `<controls:GridSplitter Grid.Row="1" VerticalOptions="Center" />` tells the GridSplitter control it should resize the adjancent rows. 
 
 And here's the result on iOS for the XAML above:
 
 ![iOS screenshot](mGkd879Oqv.gif)
+
+Also note the `RowSpacing=0` which resets the default spacing between the cells of Grid.
 
 If you would have to split two columns instead, you need to set `HorizontalOptions="Center"` on the GridSplitter:
 
@@ -63,7 +64,7 @@ Another example of two Grid controls each with their own GridSplitter:
 ![iOS screenshot](DnaXEi1wzw.gif)
 
 The XAML for this layout is included in the sample app: [/GridSplitterApp/GridSplitterApp/MainPage.xaml)](/GridSplitterApp/GridSplitterApp/MainPage.xaml)
-
+It also shows how you can easily change the style of the GridSplitter control.
 
 Add GridSplitter to your project
 -----------------------
