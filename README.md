@@ -58,9 +58,11 @@ If you would have to split two columns instead, you need to set `HorizontalOptio
           </ContentPage>
 
 
-An example of two Grid controls each with their own GridSplitter:
+Another example of two Grid controls each with their own GridSplitter:
 
 ![iOS screenshot](DnaXEi1wzw.gif)
+
+The XAML for this layout is included in the sample app: [/GridSplitterApp/GridSplitterApp/MainPage.xaml)](/GridSplitterApp/GridSplitterApp/MainPage.xaml)
 
 
 Add GridSplitter to your project
