@@ -5,13 +5,11 @@ using Xamarin.Forms;
 
 namespace GridSplitterApp
 {
-	public partial class App : Application
+	public partial class TestPage : ContentPage
 	{
-		public App ()
+		public TestPage ()
 		{
 			InitializeComponent ();
-
-			MainPage = new TestPage ();
 		}
 	}
 }
