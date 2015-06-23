@@ -3,7 +3,7 @@ GridSplitter control for Xamarin Forms
 
 A control for <b>Xamarin Forms</b> that redistributes space between columns or rows of a <b>Grid</b> control.
 
-At this moment the implementation is for <b>Android</b> and <b>iOS</b>. Contributions for Windows support are welcome!
+Platforms supported: <b>iOS</b>, <b>Android</b>, <b>WinPhone</b>
 
 Usage
 -------
