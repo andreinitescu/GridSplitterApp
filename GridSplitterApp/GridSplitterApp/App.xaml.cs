@@ -11,7 +11,7 @@ namespace GridSplitterApp
 		{
 			InitializeComponent ();
 
-			MainPage = new TestPage ();
+			MainPage = new MainPage ();
 		}
 	}
 }
