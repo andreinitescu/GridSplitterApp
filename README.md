@@ -69,13 +69,11 @@ It also shows how you can easily change the style of the GridSplitter control.
 Add GridSplitter to your project
 -----------------------
 
-1. Add GridSplitter implementation to your Xamarin Forms PCL project 
+1. Add GridSplitter control implementation to your Xamarin Forms PCL project:
        [/GridSplitterApp/GridSplitterApp/Controls/GridSplitter.cs](/GridSplitterApp/GridSplitterApp/Controls/GridSplitter.cs)
 
 2. The control uses native renderes. You need to add the renderers to your Android and iOS project respectively:
-
        [/GridSplitterApp/GridSplitterApp.Droid/Renderers/GridSplitterRenderer.cs](/GridSplitterApp/GridSplitterApp.Droid/Renderers/GridSplitterRenderer.cs)
-
        [/GridSplitterApp/GridSplitterApp.iOS/Renderer/GridSplitterRenderer.cs](/GridSplitterApp/GridSplitterApp.iOS/Renderer/GridSplitterRenderer.cs)
 
 Note you might need to update some namespaces in your app.
