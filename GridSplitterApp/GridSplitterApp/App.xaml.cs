@@ -1,18 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
 namespace GridSplitterApp
 {
-	public partial class App : Application
-	{
-		public App ()
-		{
-			InitializeComponent ();
+    public partial class App : Application
+    {
+        public App()
+        {
+            InitializeComponent();
 
-			MainPage = new MainPage ();
-		}
-	}
+            MainPage = new MainPage();
+        }
+    }
 }
 

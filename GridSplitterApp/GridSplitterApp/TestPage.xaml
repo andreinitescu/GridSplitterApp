@@ -1,24 +1,18 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage
-	xmlns="http://xamarin.com/schemas/2014/forms"
-	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-	x:Class="GridSplitterApp.TestPage"
-	xmlns:controls="clr-namespace:GridSplitterApp.Controls;assembly=GridSplitterApp">
-	<Grid
-		RowSpacing="0">
-		<Grid.RowDefinitions>
-			<RowDefinition />
-			<RowDefinition
-				Height="Auto" />
-			<RowDefinition />
-		</Grid.RowDefinitions>
-		<BoxView
-			BackgroundColor="Green" />
-		<controls:GridSplitter
-			Grid.Row="1"
-			VerticalOptions="Center" />
-		<BoxView
-			BackgroundColor="Blue"
-			Grid.Row="2" />
-	</Grid>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GridSplitterApp.TestPage"
+             xmlns:controls="clr-namespace:GridSplitterApp.Controls;assembly=GridSplitterApp">
+    <Grid RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <BoxView BackgroundColor="Green" />
+        <controls:GridSplitter Grid.Row="1"
+                               VerticalOptions="Center" />
+        <BoxView BackgroundColor="Blue"
+                 Grid.Row="2" />
+    </Grid>
 </ContentPage>

@@ -1,22 +1,17 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+using CoreGraphics;
 using Foundation;
+using GridSplitterApp.iOS.Renderer;
+using GridSplitterApp.Controls;
+using System.Linq;
 using UIKit;
 using Xamarin.Forms;
-using GridSplitterApp.Controls;
-using GridSplitterApp.iOS.Renderer;
 using Xamarin.Forms.Platform.iOS;
-using CoreGraphics;
-using System.Diagnostics;
 
-[assembly: ExportRendererAttribute (typeof(GridSplitter), typeof(GridSplitterRenderer))]
+[assembly: ExportRenderer(typeof(GridSplitter), typeof(GridSplitterRenderer))]
 
 namespace GridSplitterApp.iOS.Renderer
 {
-    public class GridSplitterRenderer : VisualElementRenderer<GridSplitter> 
+    public class GridSplitterRenderer : VisualElementRenderer<GridSplitter>
     {
         private UIPanGestureRecognizer _panGestureRecognizer;
         private CGPoint? _oldPt;
@@ -31,14 +26,14 @@ namespace GridSplitterApp.iOS.Renderer
             {
                 if (_panGestureRecognizer != null)
                 {
-                    this.RemoveGestureRecognizer(_panGestureRecognizer);
+                    RemoveGestureRecognizer(_panGestureRecognizer);
                 }
             }
 
             if (e.OldElement == null)
             {
-                this.AddGestureRecognizer(_panGestureRecognizer);
-                this.UserInteractionEnabled = true;
+                AddGestureRecognizer(_panGestureRecognizer);
+                UserInteractionEnabled = true;
             }
         }
 
@@ -57,9 +52,10 @@ namespace GridSplitterApp.iOS.Renderer
             {
                 ptOffset = new Point(pt.X - _oldPt.Value.X, pt.Y - _oldPt.Value.Y);
             }
+
             _oldPt = pt;
 
-            Element.UpdateGrid( ptOffset.X, ptOffset.Y);
+            Element.UpdateGrid(ptOffset.X, ptOffset.Y);
         }
     }
 }

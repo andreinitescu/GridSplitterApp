@@ -1,60 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GridSplitterApp.MainPage"
-	xmlns:controls="clr-namespace:GridSplitterApp.Controls;assembly=GridSplitterApp">
-	<ContentPage.Resources>
-		<ResourceDictionary>
-			<Style TargetType="controls:GridSplitter" BasedOn="{controls:Style controls:GridSplitter}">
-				<Style.Triggers>
-					<Trigger TargetType="controls:GridSplitter"
-						Property="VerticalOptions"
-						Value="Fill">
-						<Setter Property="ControlTemplate">
-							<Setter.Value>
-								<DataTemplate>
-									<Grid WidthRequest="20">
-										<StackLayout HeightRequest="10"
-											Orientation="Horizontal"
-											Padding="2"
-											VerticalOptions="Center"
-											HorizontalOptions="Center"
-											Spacing="2">
-											<BoxView WidthRequest="1"
-												BackgroundColor="Red" />
-											<BoxView WidthRequest="1"
-												BackgroundColor="Red" />
-										</StackLayout>
-									</Grid>
-								</DataTemplate>
-							</Setter.Value>
-						</Setter>
-					</Trigger>
-				</Style.Triggers>
-			</Style>
-		</ResourceDictionary>
-	</ContentPage.Resources>
-	<Grid RowSpacing="0">
-		<Grid.RowDefinitions>
-			<RowDefinition />
-			<RowDefinition Height="Auto" />
-			<RowDefinition />
-		</Grid.RowDefinitions>
-		<Grid ColumnSpacing="0">
-			<Grid.ColumnDefinitions>
-				<ColumnDefinition />
-				<ColumnDefinition Width="Auto" />
-				<ColumnDefinition />
-			</Grid.ColumnDefinitions>
-			<BoxView BackgroundColor="Green" />
-			<controls:GridSplitter Grid.Column="1"
-				HorizontalOptions="Center" />
-			<BoxView BackgroundColor="Blue"
-				Grid.Column="2" />
-		</Grid>
-		<controls:GridSplitter Grid.Row="1"
-			VerticalOptions="Center"/>
-		<Grid BackgroundColor="#FFF5F7F7"
-			Grid.Row="2">
-			<Image x:Name="Image" />
-		</Grid>
-	</Grid>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GridSplitterApp.MainPage"
+             xmlns:controls="clr-namespace:GridSplitterApp.Controls;assembly=GridSplitterApp">
+    <Grid RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Grid ColumnSpacing="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <BoxView BackgroundColor="Green" />
+            <controls:GridSplitter Grid.Column="1"
+                                   HorizontalOptions="Center" />
+            <BoxView BackgroundColor="Blue"
+                     Grid.Column="2" />
+        </Grid>
+
+        <controls:GridSplitter Grid.Row="1"
+                               VerticalOptions="Center" />
+
+        <Grid BackgroundColor="#FFF5F7F7"
+              Grid.Row="2">
+            <Image x:Name="Image" />
+        </Grid>
+    </Grid>
 </ContentPage>

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
 namespace GridSplitterApp
 {
@@ -14,7 +8,7 @@ namespace GridSplitterApp
         {
             InitializeComponent();
 
-			Image.Source = ImageSource.FromResource("GridSplitterApp.baboon.png");
+            Image.Source = ImageSource.FromResource("GridSplitterApp.baboon.png");
         }
     }
 }

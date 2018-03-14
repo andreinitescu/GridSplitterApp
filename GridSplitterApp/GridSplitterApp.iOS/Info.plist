@@ -21,11 +21,9 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>MinimumOSVersion</key>
-	<string>7.1</string>
+	<string>9.0</string>
 	<key>CFBundleDisplayName</key>
 	<string>GridSplitterApp</string>
-	<key>CFBundleIdentifier</key>
-	<string></string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>CFBundleIconFiles</key>
@@ -45,6 +43,6 @@
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>CFBundleShortVersionString</key>
-	<string></string>
+	<string>1</string>
 </dict>
 </plist>
